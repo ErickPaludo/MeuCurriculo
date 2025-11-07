@@ -1,17 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import curriculo from "./Curriculo/curriculoteste.json";
+import curriculo from "./Curriculo/curriculo.json";
 import * as AiIcons from "react-icons/ai";
 import * as BiIcons from "react-icons/bi";
 
-type IconLibrary = {
-  [key: string]: React.ComponentType<{ size?: number; color?: string }>;
-};
 
 function App() {
   const [cardCurriculoVisible, setCardCurriculoVisible] = useState(false);
   const [cardCurriculoSelecionado, setCurriculoSelecionado] = useState(0);
-  const [redeSocialIcone, setRedeSocialIcone] = useState("AiFillTool");
 
  function libIcone(lib:string){
   switch(lib){
